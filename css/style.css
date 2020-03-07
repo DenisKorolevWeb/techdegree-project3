@@ -1,0 +1,191 @@
+/* ------Base Styles------- */
+
+* {
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    color: rgb(red, rgb(48, 45, 44), blue);
+}
+
+h1{
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: turquoise;
+    margin-top: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+header h2{
+    text-align: center;
+    
+}
+
+header h3{
+    text-align: center;
+    margin:0 1em 2em 1em;
+    
+}
+
+h2{
+    font-weight: 500;
+    font-size: 1.8em;
+
+}
+h3{
+    
+    color: rgb(151, 141, 141);
+    font-size: 1.4em;
+    font-weight: 100;
+}
+
+
+.thick{
+    height: 7px;
+    background-color: black;
+    margin-bottom: 3px;
+}
+.thin{
+    height: 5px;
+    background-color: black;
+    display: block;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/* ---Main Container styling */
+
+#container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* ----Form Fields----- */
+
+label{
+    font-size: 1.2em;
+    color: grey;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"],
+textarea,
+select{
+    font-size: 1.5em;
+    color: black;
+    font-weight: 300;
+    width: 100%;
+    height: 3em;
+    padding: 15px;
+    outline: 0;
+    margin-bottom: 1.2em;
+    border-radius: .3em;
+    background-color: #e8eeef;
+    
+}
+input,
+select,
+textarea{
+    border: none; 
+    outline: 0;
+}
+
+
+textarea{
+    height: 7em;
+    margin-top: 1em;
+}
+#zip{
+    width: 50%;
+}
+input::placeholder{
+    text-align: right;   
+}
+
+input[type="tel"]::placeholder{
+    text-align: left;
+    
+}
+
+
+
+input[type="checkbox"] + label {
+    display: inline-block;
+    padding-left: 5px;
+    margin-bottom: 1.5em;
+  }
+
+input[type="radio"] + label {
+    display: inline-block;
+    padding-left: 5px;
+    margin-bottom: 1.5em;
+  }
+
+input:focus,
+textarea:focus {
+    border: solid 2px #52bab3;
+}
+
+  /* -----Button Styling------ */
+
+  input[type="submit"]{
+      outline: none;
+      width: 100%;
+      font-size: 2em;
+      font-weight: 500;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      background-color:tomato;
+      border-radius: 10px;
+      height: 100px;
+      cursor: pointer; 
+      border: none;
+
+  }
+
+
+    /* -----Footer------ */
+
+footer{
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 50px;
+    font-size: 1.2em;
+    color: grey;
+}
+
+/* ------Media Queries---------- */
+
+@media (min-width: 768px) {
+	#container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    hr{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .main-header{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
