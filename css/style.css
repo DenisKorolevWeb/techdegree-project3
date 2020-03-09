@@ -228,13 +228,14 @@ footer {
     }
 
     .input-block label {
-        flex-basis: 13rem;
-        padding: 10px;
-        margin-left: -10px;
+        flex-basis: 25%;
+		padding: 10px;
+		
     }
 
     .zip-code input {
         width: 25%;
+        margin-left: -10px;
     }
 
 
