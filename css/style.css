@@ -10,7 +10,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.5;
-    color: rgb(red, rgb(48, 45, 44), blue);
+    color: rgb(48, 45, 44);
 }
 
 h1 {
@@ -73,6 +73,9 @@ h3 {
 
 /* ----Form Fields----- */
 
+fieldset{
+    border: 0;
+}
 label {
     font-size: 1.2em;
     color: grey;
@@ -87,14 +90,16 @@ select {
     font-size: 1.5em;
     color: black;
     font-weight: 300;
-    width: 100%;
+    
     height: 3em;
     padding: 15px;
     outline: 0;
     margin-bottom: 1.2em;
     border-radius: .3em;
     background-color: #e8eeef;
-
+}
+.informational input{
+    width: 100%;
 }
 
 input,
@@ -108,11 +113,18 @@ textarea {
 textarea {
     height: 7em;
     margin-top: 1em;
+    width: 100%;
 }
 
-#zip {
+.zip-code input{
     width: 50%;
+
 }
+.input-block{
+    display: flex;
+    flex-direction: column;
+}
+
 
 input::placeholder {
     text-align: right;
@@ -137,6 +149,7 @@ input[type="radio"]+label {
     margin-bottom: 1.5em;
 }
 
+
 input:focus,
 textarea:focus {
     border: solid 2px #52bab3;
@@ -156,8 +169,18 @@ input[type="submit"] {
     height: 100px;
     cursor: pointer;
     border: none;
-
 }
+
+.btn{
+    transition: 1s ease ;
+}
+.btn:hover{
+    background-color: rgb(4, 118, 146);
+    
+}
+
+
+
 
 
 /* -----Footer------ */
@@ -174,7 +197,7 @@ footer {
 
 @media (min-width: 768px) {
     #container {
-        width: 90%;
+        width: 80%;
         margin: 0 auto;
     }
 
@@ -183,7 +206,33 @@ footer {
         margin-right: 0;
     }
 
+    .input-block input,
+	select {
+		
+		width: 80%;
+    }
+    
+
     .main-header {
         display: none;
     }
+    
+    .input-block{
+        display: flex;
+        flex-direction: row;
+            
+    }
+    .inp{
+        justify-content: space-between; 
+    }
+    .input-block label {
+		flex-basis: 10rem;
+		padding: 10px;
+		margin-left: -10px;
+    }
+    .zip-code input{
+        width: 25%;
+    }
+    
+    
 }
