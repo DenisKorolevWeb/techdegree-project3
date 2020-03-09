@@ -73,9 +73,10 @@ h3 {
 
 /* ----Form Fields----- */
 
-fieldset{
+fieldset {
     border: 0;
 }
+
 label {
     font-size: 1.2em;
     color: grey;
@@ -90,7 +91,7 @@ select {
     font-size: 1.5em;
     color: black;
     font-weight: 300;
-    
+
     height: 3em;
     padding: 15px;
     outline: 0;
@@ -98,7 +99,8 @@ select {
     border-radius: .3em;
     background-color: #e8eeef;
 }
-.informational input{
+
+.informational input {
     width: 100%;
 }
 
@@ -116,11 +118,12 @@ textarea {
     width: 100%;
 }
 
-.zip-code input{
+.zip-code input {
     width: 50%;
 
 }
-.input-block{
+
+.input-block {
     display: flex;
     flex-direction: column;
 }
@@ -171,17 +174,14 @@ input[type="submit"] {
     border: none;
 }
 
-.btn{
-    transition: 1s ease ;
+.btn {
+    transition: 1s ease;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: rgb(4, 118, 146);
-    
+
 }
-
-
-
-
 
 /* -----Footer------ */
 
@@ -207,32 +207,35 @@ footer {
     }
 
     .input-block input,
-	select {
-		
-		width: 80%;
+    select {
+
+        width: 80%;
     }
-    
+
 
     .main-header {
         display: none;
     }
-    
-    .input-block{
+
+    .input-block {
         display: flex;
         flex-direction: row;
-            
+
     }
-    .inp{
-        justify-content: space-between; 
+
+    .inp {
+        justify-content: space-between;
     }
+
     .input-block label {
-		flex-basis: 10rem;
-		padding: 10px;
-		margin-left: -10px;
+        flex-basis: 10rem;
+        padding: 10px;
+        margin-left: -10px;
     }
-    .zip-code input{
+
+    .zip-code input {
         width: 25%;
     }
-    
-    
+
+
 }
