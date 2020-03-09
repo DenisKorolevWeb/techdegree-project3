@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Online Registration</title>
 </head>
@@ -24,7 +24,7 @@
             <hr class="thin">
             <fieldset id="informational">
 
-                <h2>Contact Information</h2>
+                <legend>Contact Information</legend>
 
                 <div class="input-block inp">
                     <label for="name">Full Name</label>
@@ -33,12 +33,12 @@
 
                 <div class="input-block inp">
                     <label for="email">Email Address</label>
-                    <input type="email" id="email" placeholder="Required" name="user_info required">
+                    <input type="email" id="email" placeholder="Required" name="user_info" required>
                 </div>
 
                 <div class="input-block inp">
                     <label for="phone">Phone</label>
-                    <input type="tel" id="phone" placeholder="xxx-xxx-xx-xx">
+                    <input type="tel" name="phone-number" id="phone" placeholder="(xxx)-xxx-xx-xx">
                 </div>
 
                 <div class="input-block inp">
@@ -110,15 +110,15 @@
 
                 <div class="input-block zip-code">
                     <label for="zip">Zip Code</label>
-                    <input type="number" id="zip" name="user_info">
+                    <input type="number" id="zip" name="zip-codes">
                 </div>
                 <br>
                 <br>
+                <hr class="thin">
             </fieldset>
             <fieldset id="optional">
-                <hr class="thin">
 
-                <h2>Newsletter</h2>
+                <legend>Newsletter</legend>
                 <h3>Select the newsletter you would like to recieve</h3>
 
                 <input type="checkbox" id="html-news" name="user_subscription">
@@ -141,8 +141,7 @@
                 <br>
 
                 <label for="message">Other topics you'd like to hear about</label>
-                <textarea id="message" rows="10"></textarea>
-
+                <textarea id="message" name="user-feedback" rows="10"></textarea>
 
                 <input class="btn" type="submit" id="sign-up" value="Sign Up" name="user_button">
             </fieldset>
